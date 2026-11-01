@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/11b2b75f3e.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="otherScripts/devices.js" defer></script>
+    <title>Compare</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <!-- Burger Menu Nav (only visible on mobile view) -->
+            <div class="nav-burger">
+                <button class="icon" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+                </button>
+                <div class="burger-links" id="site-navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="devices.html">Devices</a></li>
+                        <li><a href="compare.html" class="active">Compare</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Title -->
+            <div class="nav-title">
+                <h2>Compute Decisions</h2>
+            </div>
+            <!-- Default Nav (only visible on desktop/tablet view) -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="devices.html">Devices</a></li>
+                    <li><a href="compare.html" class="active">Compare</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Search button (used to quick search for devices) -->
+            <div class="nav-search">
+                <button class="btn-search" type="button" aria-label="Toggle device search" aria-expanded="false" aria-controls="device-search">
+                    <i class="fa fa-search" style="font-size: 20px;"></i>
+                </button>
+                <div class="search-panel" id="device-search">
+                    <input id="device-search-input" type="search" placeholder="Search devices...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="compare-main">
+        <section class="compare-page">
+            <div>
+                <h1 style="text-align: center;">Compare Devices</h1>
+            </div>
+            <div class="compare-container color-scheme">
+                <div class="compare-device" id="deviceComparison1">
+                    
+                </div>
+                <div class="compare-device" id="deviceComparison2">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <p> | </p>
+            <a href="contact.html">Contact</a>
+            <p> | </p>
+            <a href="">Privacy</a>
+        </div>
+        <div class="footer-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+</body>
+</html>

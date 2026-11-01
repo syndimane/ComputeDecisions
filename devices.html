@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/11b2b75f3e.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="otherScripts/devices.js" defer></script>
+    <title>Devices</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <!-- Burger Menu Nav (only visible on mobile view) -->
+            <div class="nav-burger">
+                <button class="icon" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+                </button>
+                <div class="burger-links" id="site-navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="devices.html" class="active">Devices</a></li>
+                        <li><a href="compare.html">Compare</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Title -->
+            <div class="nav-title">
+                <h2>Compute Decisions</h2>
+            </div>
+            <!-- Default Nav (only visible on desktop/tablet view) -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="devices.html" class="active">Devices</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Search button (used to quick search for devices) -->
+            <div class="nav-search">
+                <button class="btn-search" type="button" aria-label="Toggle device search" aria-expanded="false" aria-controls="device-search">
+                    <i class="fa fa-search" style="font-size: 20px;"></i>
+                </button>
+                <div class="search-panel" id="device-search">
+                    <input id="device-search-input" type="search" placeholder="Search devices...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-home devices-main">
+        <!-- Filter Section -->
+        <section class="device-filter main-section color-scheme" aria-labelledby="device-filter-title" style="margin-top: 15px;">
+            <div class="filter-search-row">
+                <label for="device-filter-input" id="device-filter-title">Filter:</label>
+                <input id="device-filter-input" type="search" placeholder="Search devices..." autocomplete="off" style="background-color: rgb(12, 12, 12);">
+                <button class="filter-submit" id="reset-filters" type="button" aria-label="Reset filters" title="Reset filters">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="filter-buttons" role="group" aria-label="Filter by device category">
+                <button type="button" class="filter-button" data-filter="gaming">Gaming</button>
+                <button type="button" class="filter-button" data-filter="home-office">Home &amp; Office</button>
+                <button type="button" class="filter-button" data-filter="business">Business</button>
+                <button type="button" class="filter-button" data-filter="student">Student</button>
+                <button type="button" class="filter-button" data-filter="designer">Designer</button>
+            </div>
+        </section>
+
+        <!-- Device View Section -->
+        <section class="featured-devices main-section color-scheme">
+            <h1>Devices</h1>
+            <p class="filter-empty" hidden>No devices match your filters.</p>
+            <div class="device-flex" id="deviceUi">
+                <!-- Devices will be displayed here -->
+            </div>
+        </section>
+
+        <div class="compare-selection-bar" role="region" aria-label="Device comparison" id="compareSelectionBar">
+            <span id="selectedDeviceCount" aria-live="polite">0 Items Selected</span>
+            <button type="button" id="compareNowButton">Compare Now</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <p> | </p>
+            <a href="contact.html">Contact</a>
+            <p> | </p>
+            <a href="">Privacy</a>
+        </div>
+        <div class="footer-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+</body>
+</html>
